@@ -75,7 +75,6 @@ a {
 	font-size: 10px;
 	font-weight: normal;
 	padding-top: 8px;
-	letter-spacing: 1px;
 	text-decoration: none;
 }
 
@@ -89,14 +88,22 @@ a {
 	text-align: center;
 	font-size: 10px;
 	font-weight: normal;
-	padding-top: 8px;
-	letter-spacing: 1px;
+	padding-top: 9px;
 	text-decoration: none;
 }
 
 .header-register a, 
 .header-login a {
 	text-decoration: none;
+}
+
+.register-button {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+	text-shadow: 1px 1px 7px #000;
+	font-size: 12px;
+	font-weight: lighter;
 }
 
 
@@ -153,7 +160,6 @@ a {
 	margin-top: 5px;
 	color: #fff;
 	font-size: 16px;
-	letter-spacing: 1px;
 	font-weight: lighter;
 }
 
