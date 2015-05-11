@@ -20,8 +20,10 @@
 	<div class="banner">
 		<div class="login-container">
 
-			<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
-
+			{{#link-to 'index'}}
+				<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{/link-to}}
+			
 			<form class="login-form">
 		       {{input value=identification placeholder='Enter Email' type='email' class='login-input'}}
 		       {{input value=password placeholder='Enter Password' type='password' class='login-input'}}

@@ -19,8 +19,9 @@
 <div class="homepage-banner">
 	<div class="banner">
 		<div class="login-container">
-
-			<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{#link-to 'index'}}
+				<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{/link-to}}
 				{{input placeholder='Enter College or University' type='text' class='search-input'}}
 		</div>
 	</div>
