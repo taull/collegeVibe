@@ -1,0 +1,22 @@
+{{outlet}}
+
+<div class="homepage-banner">
+	<div class="banner">
+		<div class="register-container">
+
+			<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			<form class="login-form">
+				{{input placeholder='Name' type='text' class='login-input'}}
+		    	{{input placeholder='Email' type='email' class='login-input'}}
+		    	{{input placeholder='Password' type='password' class='login-input'}}
+
+		    	{{view "select" class="select-user-type" value=userType content=typeUser}}
+
+		      <div class="register-submit">
+		        <button type="submit">Register</button>
+		      </div>
+
+		    </form>
+		</div>
+	</div>
+</div>
