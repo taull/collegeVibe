@@ -15,6 +15,7 @@ a {
 	width: 1080px;
 	margin: 0 auto;
 	padding-top: 25px;
+	text-align:center;
 }
 
 .header-wrap {
@@ -234,29 +235,41 @@ a {
 	position: fixed;
 	width: 300px;
 	height: 100%;
-	background: #000;
+	background: rgba(0,0,0,.8);
 	left: -300px;
 	top: 0;
+	z-index:100;
+	transition:250ms;
 }
 
 .home-sidebar-open {
-	position:fixed;
+	position: fixed;
 	top: 15px;
-	padding-left: 20px;
-	color: #fff;
-	font-size:28px;
-	z-index: 100;
-	transition: 250ms;
+	padding-left: 8px;
+	padding-top: 4px;
+	color: #4EAE8F;
+	font-size: 28px;
+	z-index: 101;
+	width: 40px;
+	height: 40px;
+	background: rgba(255,255,255,.1);
+	margin-left: 15px;
+	border-radius: 5px;
 }
 
 .home-sidebar-close {
-	position:fixed;
+	position: fixed;
 	top: 15px;
-	padding-left: 20px;
+	padding-left: 8px;
+	padding-top: 4px;
 	color: #4EAE8F;
-	font-size:28px;
-	z-index: 100;
-	transition: 250ms;
+	font-size: 28px;
+	z-index: 101;
+	width: 40px;
+	height: 40px;
+	background: rgba(255,255,255,.1);
+	margin-left: 15px;
+	border-radius: 5px;
 }
 
 .open-sidebar {

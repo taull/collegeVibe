@@ -2,17 +2,20 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-	openSidebar: function(){
-        Ember.$('.home-sidebar').addClass('open-sidebar');
+	actions: {
 
-        Ember.$('.home-sidebar-open').addClass('hidden');
-        Ember.$('.home-sidebar-close').removeClass('hidden');
-    },
+		openSidebar: function(){
+	        Ember.$('.home-sidebar').addClass('open-sidebar');
 
-    closeSidebar: function(){
-        Ember.$('.home-sidebar').removeClass('open-sidebar');
+	        Ember.$('.home-sidebar-open').addClass('hidden');
+	        Ember.$('.home-sidebar-close').removeClass('hidden');
+	    },
 
-        Ember.$('.home-sidebar-close').addClass('hidden');
-        Ember.$('.home-sidebar-open').removeClass('hidden');
-    },
+	    closeSidebar: function(){
+	        Ember.$('.home-sidebar').removeClass('open-sidebar');
+
+	        Ember.$('.home-sidebar-close').addClass('hidden');
+	        Ember.$('.home-sidebar-open').removeClass('hidden');
+	    }
+	}
 });
