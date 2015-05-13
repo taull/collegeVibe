@@ -11,6 +11,9 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
+Parse.initialize("iqRd6LODNgTmbMv1fMMsmSblC2qWK6LFJCkgeyF2", "NItnQMZsdy9LiQlla3OZFgiQQ1TYrBCncyhIrp52");
+
+
 loadInitializers(App, config.modulePrefix);
 
 export default App;
