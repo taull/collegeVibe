@@ -15,6 +15,11 @@ Router.map(function() {
   this.route('colleges', function() {
     this.route('profile');
     this.route('my-profile');
+    this.route('gallery');
+    this.route('restaurants');
+    this.route('hotels');
+    this.route('sports');
+    this.route('breaks');
   });
   this.route('login');
   this.route('contact');

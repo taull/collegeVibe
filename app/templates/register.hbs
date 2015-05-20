@@ -29,7 +29,12 @@
 		    	{{input placeholder='Email' type='email' class='login-input'}}
 		    	{{input placeholder='Password' type='password' class='login-input'}}
 
-		    	{{view "select" class="select-user-type" value=userType content=typeUser}}
+		    	<label class="input-label">What type of user are you?</label>
+		    	{{view "select" class="select-user-type" content=typeUser}}
+
+		    	<label class="input-label">What college are you associated with?</label>
+		    	{{view "select" class="select-user-type" content=pickCollege}}
+
 
 		      <div class="register-submit">
 		        <button type="submit">Register</button>

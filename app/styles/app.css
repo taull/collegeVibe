@@ -172,10 +172,19 @@ body {
 }
 
 .input-label {
-	display: inline-block;
+	width: 300px;
+	text-align: left;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #fff;
+	text-shadow: 1px 1px 9px #000;
 }
 
 .select-user-type {
+	display:block;
+	margin: 0 auto;
     width: 300px;
     height: 45px;
     -webkit-appearance: none;
@@ -191,7 +200,7 @@ body {
     font-size: 16px;
     color: #000;
     text-indent: 15px;
-    margin-top: 1px;
+    margin-top: 4px;
 }
 
 .select-user-type:focus {
@@ -289,7 +298,7 @@ body {
 
 .profile-container {
 	position:relative;
-	top: 75px;
+	top: 100px;
 	width: 1080px;
 	margin: 0 auto;
 	background: transparent;
@@ -321,25 +330,34 @@ body {
 	display: inline-block;
 	font-size: 12px;
 	padding-top: 15px;
-	padding-left: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-weight: bold;
 	color: #999;
+	cursor: pointer;
 }
 
-.profile-tabs li:first-child {
+.current {
 	color: #000;
 }
-
 /* Profile Feed */
 
 .profile-feed {
 	width: 320px;
 	vertical-align:top;
+	padding: 20px;
+	border: 1px solid #f0f0f0;
+	border-radius: 4px;
+}
+
+.profile-feed-heading {
+	padding-left: 10px;
+	font-weight: bold;
 }
 
 .single-post {
 	border-bottom: 1px solid #f0f0f0;
-	padding: 10px;
+	padding: 20px 10px;
 }
 
 .feed-post ul {
@@ -352,6 +370,7 @@ body {
 	display:block;
 	padding-bottom: 5px;
 	font-weight: bold;
+	line-height: 16px;
 }
 
 .feed-time {
