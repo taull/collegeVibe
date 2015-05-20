@@ -1,16 +1,40 @@
 {{outlet}}
 
+<div class="header-buttons">
+
+	{{#link-to 'register'}}
+	<div class="header-register">
+		<p>Register</p>
+	</div>
+	{{/link-to}}
+
+	{{#link-to 'login'}}
+	<div class="header-login">
+		<p>Log in</p>
+	</div>
+	{{/link-to}}
+	
+</div>
+
 <div class="homepage-banner">
 	<div class="banner">
 		<div class="register-container">
 
-			<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{#link-to 'index'}}
+				<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{/link-to}}			
+
 			<form class="login-form">
 				{{input placeholder='Name' value=name type='text' class='login-input'}}
 		    	{{input placeholder='Email' value=email type='email' class='login-input'}}
 		    	{{input placeholder='Password' value=password type='password' class='login-input'}}
 
-		    	{{view "select" class="select-user-type" value=userType content=typeUser}}
+		    	<label class="input-label">What type of user are you?</label>
+		    	{{view "select" class="select-user-type" content=typeUser}}
+
+		    	<label class="input-label">What college are you associated with?</label>
+		    	{{view "select" class="select-user-type" content=pickCollege}}
+
 
 		      <div class="register-submit">
 		        <button {{action "register"}}>Register</button>
