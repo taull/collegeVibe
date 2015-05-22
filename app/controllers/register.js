@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
 			var userType = this.get('userType');
 			var college = this.get('college');
 
-			Parse.User.signUp(username, password, {email:email, userType:userType, college:college},
+			Parse.User.signUp(email, password, {email:email, username:username, userType:userType, college:college},
 					//callback for successful post of new user to the server
 				 {success:function (data) {
 					//code to run on success
