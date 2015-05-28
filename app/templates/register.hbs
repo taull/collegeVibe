@@ -25,9 +25,9 @@
 			{{/link-to}}			
 
 			<form class="login-form">
-				{{input placeholder='Name' type='text' class='login-input'}}
-		    	{{input placeholder='Email' type='email' class='login-input'}}
-		    	{{input placeholder='Password' type='password' class='login-input'}}
+				{{input placeholder='Name' value=name type='text' class='login-input'}}
+		    	{{input placeholder='Email' value=email type='email' class='login-input'}}
+		    	{{input placeholder='Password' value=password type='password' class='login-input'}}
 
 		    	<label class="input-label">What type of user are you?</label>
 		    	{{view "select" class="select-user-type" content=typeUser}}
@@ -37,7 +37,7 @@
 
 
 		      <div class="register-submit">
-		        <button type="submit">Register</button>
+		        <button {{action "register"}}>Register</button>
 		      </div>
 
 		    </form>

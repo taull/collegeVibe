@@ -17,11 +17,16 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    
+
+    parseKeys: {
+      applicationId:'iqRd6LODNgTmbMv1fMMsmSblC2qWK6LFJCkgeyF2',
+      restApi:'YPsxBqL10FCwamMzQ2WHSg5QKGAgLTb0KHVhmL9C'
+    },
+
     contentSecurityPolicy: {
       'report-uri': "'http://localhost:4200'",
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-inline'",
+      'script-src': "'self' 'unsafe-inline' 'www.parsecdn.com/js/parse-1.4.2.min.js'",
       'font-src': "'self' *",
       'connect-src': "'self' *",
       'img-src': "'self' *",
