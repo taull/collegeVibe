@@ -7,24 +7,22 @@ export default Ember.Controller.extend({
 
 	actions: {
 		register: function () {
-			//Get the values from the text boxes
-			var name = this.get('name');
+			//Get the values from the form
+			var username = this.get('name');
 			var email = this.get('email');
 			var password = this.get('password');
-			//Create the constructor for the user object
-			var users = Parse.Object.extend({
-				className: 'user',
-				//Set the attributes on the instanced object
-				initialize: function () {
-					this.set({name:name});
-					this.set({email:email});
-				}
-			});
-			//Create an instance of the user-class object and save it to the server
-			var newUser = new users().save();
-			//Change to the index route once registered
-			//(Might want to make this run after a successful callback)
-			this.transitionToRoute('index');
+			var userType = this.get('userType');
+			var college = this.get('college');
+
+			Parse.User.signUp(email, password, {email:email, username:username, userType:userType, college:college},
+					//callback for successful post of new user to the server
+				 {success:function (data) {
+					//code to run on success
+					},
+					error:function (user, error) {
+						alert(error.message);
+					}});
+
 	}
 }
 
