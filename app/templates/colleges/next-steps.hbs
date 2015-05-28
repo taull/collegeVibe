@@ -1,0 +1,37 @@
+{{outlet}}
+<div class="next-steps-wrap">
+	<div class="next-steps-container">
+
+		<form class="next-steps-form">
+
+			<label class="next-label">Location:</label>
+	    	{{input placeholder='City' type='text' class='half-input'}}
+		    {{view "select" class="select-state" content=selectState}}
+	    	{{input placeholder='Zip' type='text' class='third-input'}}
+
+
+			<label class="next-label">Enrollment:</label>
+			{{input placeholder='Undergrad' type='text' class='half-input'}}
+			{{input placeholder='Graduate' type='text' class='half-input'}}
+
+
+	    	<label class="next-label">Tuition:</label>
+	    	{{input placeholder='In-State' type='text' class='half-input'}}
+
+	    	{{input placeholder='Out-of-State' type='text' class='half-input'}}
+
+	    	<label class="next-label">Acceptance Rate:</label>
+	    	{{input type='text' class='half-input'}}
+
+	    	<label class="next-label">Percentages:</label>
+	    	{{input placeholder='Female' type='text' class='half-input'}}
+	    	{{input placeholder='Male' type='text' class='half-input'}}
+
+	      <div class="register-submit">
+	        <button type="submit">Submit</button>
+	      </div>
+
+	    </form>
+
+	</div>
+</div>

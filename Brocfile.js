@@ -19,5 +19,8 @@ var app = new EmberApp();
 
 app.import("bower_components/font-awesome/css/font-awesome.css");
 
+app.import('bower_components/jquery-ui/jquery-ui.js');
+app.import('bower_components/jquery-ui/ui/tooltip.js');
+
 
 module.exports = app.toTree();

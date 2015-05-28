@@ -1,15 +1,27 @@
 <div class="header-wrap">
 	<div class="header">
 		<div class="logo"></div>
-		<div class="header-nav">
+<!-- 		<div class="header-nav">
 			<ul>
 				<li>Colleges</li>
 				<li>Gallery</li>
 				<li>About</li>
 				<li>Contact</li>
 			</ul>
-		</div>
+		</div> -->
 	</div>
 </div>
+
+<div class="home-sidebar-open" {{action 'openSidebar'}}>{{fa-icon "bars"}}</div>
+
+<div class="home-sidebar-close hidden" {{action 'closeSidebar'}}>{{fa-icon "bars"}}</div>
+
+<div class="home-sidebar">
+	<ul>
+		<li>Home</li>
+	</ul>
+</div>
+
+
 
 {{outlet}}

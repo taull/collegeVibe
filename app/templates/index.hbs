@@ -1,21 +1,29 @@
 {{outlet}}
 
+<div class="header-buttons">
+
+	{{#link-to 'register'}}
+	<div class="header-register">
+		<p>Register</p>
+	</div>
+	{{/link-to}}
+
+	{{#link-to 'login'}}
+	<div class="header-login">
+		<p>Log in</p>
+	</div>
+	{{/link-to}}
+	
+</div>
+
 <div class="homepage-banner">
 	<div class="banner">
 		<div class="login-container">
-
-			<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
-			<form class="login-form">
-		       {{input value=identification placeholder='Enter Email' type='email' class='login-input'}}
-		       {{input value=password placeholder='Enter Password' type='password' class='login-input'}}
-
-<!-- 		      <div class="new-user-link">Register</div>
- -->
-		      <div class="login-submit">
-		        <button type="submit">Login</button>
-		      </div>
-
-		    </form>
+			{{#link-to 'index'}}
+				<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
+			{{/link-to}}
+				{{input placeholder='Enter College or University' type='text' class='search-input' action="searchDropdown"}}
+				<div class="college-search"></div>
 		</div>
 	</div>
 </div>
