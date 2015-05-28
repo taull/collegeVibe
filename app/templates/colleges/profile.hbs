@@ -1,18 +1,29 @@
 {{outlet}}
 
 
+<div class="college-banner">
+	<div class="profile-tabs-wrap">
+		<div class="profile-tabs">
+			<ul>
+				{{#link-to 'colleges.profile' tagName="li"}}Statistics{{/link-to}}
+				{{#link-to 'colleges.restaurants' tagName="li"}}Food &amp; Drink{{/link-to}}
+				{{#link-to 'colleges.hotels' tagName="li"}}Hotels{{/link-to}}
+				{{#link-to 'colleges.sports' tagName="li"}}Sports{{/link-to}}
+				{{#link-to 'colleges.breaks' tagName="li"}}Break Info{{/link-to}}
+				{{#link-to 'colleges.gallery' tagName="li"}}Gallery{{/link-to}}
 
-<div class="profile-tabs-wrap">
-	<div class="profile-tabs">
-		<ul>
-			{{#link-to 'colleges.profile' tagName="li"}}Statistics{{/link-to}}
-			{{#link-to 'colleges.restaurants' tagName="li"}}Food &amp; Drink{{/link-to}}
-			{{#link-to 'colleges.hotels' tagName="li"}}Hotels{{/link-to}}
-			{{#link-to 'colleges.sports' tagName="li"}}Sports{{/link-to}}
-			{{#link-to 'colleges.breaks' tagName="li"}}Break Info{{/link-to}}
-			{{#link-to 'colleges.gallery' tagName="li"}}Gallery{{/link-to}}
-
-		</ul>	
+			</ul>	
+		</div>
+	</div>
+	<div class="college-banner-info">
+		<div class="college-banner-info-container">
+			<div class="college-avatar"><img src="/assets/images/clemson-logo.png"></div>
+			<div class="college-contact">
+				<h1>Clemson University</h1>
+				<span>{{fa-icon "map-marker"}}</span><p>Clemson, SC</p>
+				<span>{{fa-icon "globe"}}</span><p>www.clemson.edu</p>
+			</div>
+		</div>
 	</div>
 </div>
 

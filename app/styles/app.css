@@ -1,8 +1,11 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic);
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -11,6 +14,15 @@ a {
 
 body {
 	background:#f8f8f8;
+	z-index: 1;
+	position: relative;
+}
+
+.body-container {
+	width: 100%;
+	position: relative;
+	background: #f8f8f8;
+	z-index: 1;
 }
 
 /* HEADER */
@@ -19,21 +31,22 @@ body {
 	width: 1080px;
 	margin: 0 auto;
 	padding-top: 25px;
-	text-align:center;
 }
 
 .header-wrap {
 	width: 100%;
 	height: 75px;
-	background: #000;
-	position:fixed;
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0;
+	z-index: 100;
 }
 
 .logo {
-	background: url('/assets/images/logo_white_text.svg');
+	background: url('/assets/images/logo_white_background.svg');
 	background-size: contain;
-	width: 247px;
-	height: 35px;
+	width: 210px;
+	height: 30px;
 	display: inline-block;
 }
 
@@ -306,19 +319,20 @@ body {
 }
 
 .profile-tabs-wrap {
-	display: block;
-	position:relative;
+	position: absolute;
 	width: 100%;
 	background: #f0f0f0;
-	height: 40px;
+	height: 50px;
 	border-bottom: 1px solid #dfdfdf;
-	top: 75px;
+	border-top: 1px solid #dfdfdf;
+	bottom:0;
 }
 
 .profile-tabs {
 	width: 1080px;
 	margin: 0 auto;
 	text-align:center;
+	padding-top:18px;
 }
 
 .profile-tabs ul {
@@ -329,11 +343,10 @@ body {
 .profile-tabs li {
 	display: inline-block;
 	font-size: 12px;
-	padding-top: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-weight: bold;
-	color: #999;
+	color: #555;
 	cursor: pointer;
 }
 
@@ -342,15 +355,17 @@ body {
 }
 /* Profile Feed */
 
-.profile-feed {
-	width: 320px;
+.restaurants-profile-feed {
+	width: 420px;
 	vertical-align:top;
 	padding: 20px;
-	border: 1px solid #f0f0f0;
+	border: 1px solid #dfdfdf;
 	border-radius: 4px;
+	display: inline-block;
+	background: #fff;
 }
 
-.profile-feed-heading {
+.restaurants-profile-feed-heading {
 	padding-left: 10px;
 	font-weight: bold;
 }
@@ -385,4 +400,346 @@ body {
 	display: block;
 	font-size: 12px;
 	font-weight: normal;
+}
+
+/* College Search Container */
+
+.college-search {
+	width: 320px;
+	height: 50px;
+	margin: 0 auto;
+	background:#000;
+	transition:250ms;
+}
+
+.college-search-expand {
+	height:200px;
+
+}
+
+/* Next Steps Page */
+
+.next-steps-wrap {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	padding-top:75px;
+}
+
+.next-steps-container {
+	width: 404px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+.whole-input {
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	outline: 0;
+	text-indent: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: lighter;
+}
+
+.next-label {
+	display: block;
+	margin-top: 15px;
+	font-size: 12px;
+	text-align:left;
+	color:#555;
+}
+
+.half-input {
+	width: 45%;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	outline: 0;
+	text-indent: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+.third-input {
+	width: 25%;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	outline: 0;
+	text-indent: 10px;
+	font-size: 14px;
+	margin-top: 10px;
+	font-weight: lighter;
+	display: inline-block;
+
+}
+
+.select-state {
+	height: 40px;
+	width: 60px;
+	border: 1px solid #dfdfdf;
+	border-radius: 0;
+	background: transparent;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.select-state:focus {
+	outline: 0;
+}
+
+/* Gallery Page */
+
+.gallery-container {
+	width: 1080px;
+	margin: 25px auto;
+
+}
+
+.gallery-container ul {
+	list-style: none;
+	padding-left: 0;	
+}
+
+.gallery-container li {
+	display: inline-block;
+	width: 250px;
+	height: 320px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	margin-right:15px;
+}
+
+.gallery-container li:nth-child(4n) {
+	margin-right:0;
+}
+
+.gallery-thumbnail {
+	width: 230px;
+	height: 250px;
+	overflow: hidden;
+}
+
+.gallery-image {
+	height: 300px;
+	width: auto;
+}
+
+.image-info {
+	padding-top: 15px;
+	font-size: 12px;
+}
+
+.image-uploadedby {
+	color: #555;
+	display: inline-block;
+}
+
+.image-uploadedby span {
+	font-weight: bold;
+}
+
+.image-uploadedwhen {
+	color: #999;
+	display: inline-block;
+	float: right;
+}
+
+.image-likecount {
+	color: #555;
+	padding-top:5px;
+	display: inline-block;
+}
+
+.image-rating {
+	padding-top: 5px;
+}
+
+/* College Hotel & Restaurant/Bar Page */
+
+.hotel-container, 
+.restaurants-container {
+	width: 1080px;
+	margin: 25px auto;
+	position: relative;
+}
+
+.hotel-list, 
+.restaurants-list {
+	width: 600px;
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 4px;
+	padding: 30px;
+	font-size: 0;
+	margin-right: 15px;
+}
+
+.hotel-list ul, 
+.restaurants-list ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.hotel-list li, 
+.restaurants-list li {
+	display: block;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 30px 0;
+	color: #555;
+}
+
+.hotel-list-title, 
+.restaurants-list-title {
+	font-weight: bold;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.hotel-list-miles, 
+.restaurants-list-miles {
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	float: right;
+	vertical-align: top;
+}
+
+.hotel-list-address, 
+.restaurants-list-address {
+	display: inline-block;
+	color: #999;
+	font-size: 12px;
+	padding-top: 3px;
+}
+
+.hotel-list-rating, 
+.restaurants-list-rating {
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	vertical-align:top;
+}
+
+.hotel-list-info, 
+.restaurants-list-info {
+	display: inline-block;
+	width: 475px;
+	vertical-align: top;
+	padding-left:10px;
+}
+
+.hotel-list-info-top,
+.hotel-list-info-bottom, 
+.restaurants-list-info-top,
+.restaurants-list-info-bottom {
+	display:block;
+}
+
+.hotel-list-avatar, 
+.restaurants-list-avatar {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	margin-top: -5px;
+}
+
+.hotel-list-avatar img, 
+.restaurants-list-avatar img {
+	width: 50px;
+	height: auto;
+}
+
+/* College Banner */
+
+.college-banner {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	background:url('/assets/images/campus-1.jpg') center top;
+	background-size: cover;
+	top: 0;
+	z-index: 0;
+}
+
+.college-banner-info-container {
+	width: 1080px;
+	margin: 0 auto;
+	height: 75px;
+}
+
+.college-banner-info {
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	background: rgba(255,255,255,.8);
+	bottom: 50px;
+}
+
+.college-avatar {
+	width: 160px;
+	height: 160px;
+	background: #dfdfdf;
+	padding: 5px;
+	border-radius: 4px;
+	margin-top: -65px;
+ 	box-shadow: 0 0 30px -5px #000;
+ 	display: inline-block;
+}
+
+.college-avatar img {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #dfdfdf;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.college-contact {
+	display: inline-block;
+	vertical-align: top;
+	padding-top:10px;
+}
+
+.college-contact h1 {
+	font-size: 24px;
+	padding-left: 20px;
+	font-weight: 400;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.college-contact p {
+	display: inline-block;
+	font-size: 16px;
+	padding-left:5px;
+	vertical-align: top;
+  	padding-top: 2px;
+}
+
+.college-contact span {
+	font-size: 20px;
+	padding-left:20px;
+}
+
+.college-banner-contact {
+	width: 100%;
+	height: 50px;
+	background: #333;
+	bottom: 0;
+	position: absolute;
+	display: block;
 }

@@ -20,6 +20,7 @@ Router.map(function() {
     this.route('hotels');
     this.route('sports');
     this.route('breaks');
+    this.route('next-steps');
   });
   this.route('login');
   this.route('contact');
