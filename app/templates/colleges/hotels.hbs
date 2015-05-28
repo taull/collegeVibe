@@ -1,16 +1,76 @@
 {{outlet}}
 
-<div class="profile-tabs-wrap">
-	<div class="profile-tabs">
-		<ul>
-			{{#link-to 'colleges.profile' tagName="li"}}Statistics{{/link-to}}
-			{{#link-to 'colleges.restaurants' tagName="li"}}Food &amp; Drink{{/link-to}}
-			{{#link-to 'colleges.hotels' tagName="li"}}Hotels{{/link-to}}
-			{{#link-to 'colleges.sports' tagName="li"}}Sports{{/link-to}}
-			{{#link-to 'colleges.breaks' tagName="li"}}Break Info{{/link-to}}
-			{{#link-to 'colleges.gallery' tagName="li"}}Gallery{{/link-to}}
-
-		</ul>	
-	</div>
+<div class="college-banner">
 </div>
 
+<div class="body-container">
+
+	<div class="profile-tabs-wrap">
+		<div class="profile-tabs">
+			<ul>
+				{{#link-to 'colleges.profile' tagName="li"}}Statistics{{/link-to}}
+				{{#link-to 'colleges.restaurants' tagName="li"}}Food &amp; Drink{{/link-to}}
+				{{#link-to 'colleges.hotels' tagName="li"}}Hotels{{/link-to}}
+				{{#link-to 'colleges.sports' tagName="li"}}Sports{{/link-to}}
+				{{#link-to 'colleges.breaks' tagName="li"}}Break Info{{/link-to}}
+				{{#link-to 'colleges.gallery' tagName="li"}}Gallery{{/link-to}}
+
+			</ul>	
+		</div>
+	</div>
+
+	<div class="hotel-container">
+		<div class="hotel-list">
+			<ul>
+				<li>
+					<div class="hotel-list-avatar">
+						<img src="/assets/images/marriott-logo.png">
+					</div>
+					<div class="hotel-list-info">
+						<div class="hotel-list-info-top">
+							<p class="hotel-list-title">Marriott at Clemson</p>
+							<p class="hotel-list-miles">1.2 miles away</p>
+						</div>
+						<div class="hotel-list-info-bottom">
+							<p class="hotel-list-address">567 College Avenue</p>
+							<p class="hotel-list-rating">{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star-o"}}</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="hotel-list-avatar">
+						<img src="/assets/images/marriott-logo.png">
+					</div>
+					<div class="hotel-list-info">
+						<div class="hotel-list-info-top">
+							<p class="hotel-list-title">Marriott at Clemson</p>
+							<p class="hotel-list-miles">1.2 miles away</p>
+						</div>
+						<div class="hotel-list-info-bottom">
+							<p class="hotel-list-address">567 College Avenue</p>
+							<p class="hotel-list-rating">{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star-o"}}</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="hotel-list-avatar">
+						<img src="/assets/images/marriott-logo.png">
+					</div>
+					<div class="hotel-list-info">
+						<div class="hotel-list-info-top">
+							<p class="hotel-list-title">Marriott at Clemson</p>
+							<p class="hotel-list-miles">1.2 miles away</p>
+						</div>
+						<div class="hotel-list-info-bottom">
+							<p class="hotel-list-address">567 College Avenue</p>
+							<p class="hotel-list-rating">{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star"}}{{fa-icon "star-o"}}</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</div> <!-- Body Container -->
