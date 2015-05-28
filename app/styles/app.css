@@ -82,22 +82,9 @@ body {
 	padding-right:20px;
 }
 
-.header-register {
-	display: inline-block;
-	width: 80px;
-	height: 30px;
-	border-radius: 3px;
-	background: rgba(255,255,255, .3);
-	color:#fff;
-	text-align: center;
-	font-size: 10px;
-	font-weight: normal;
-	padding-top: 8px;
-	text-decoration: none;
-	vertical-align: top;
-}
+/*Changed the header-login and header-button to the same class*/
 
-.header-login {
+.header-button {
 	display: inline-block;
 	width: 80px;
 	height: 30px;
@@ -110,10 +97,15 @@ body {
 	padding-top: 9px;
 	text-decoration: none;
 	vertical-align: top;
-
+	cursor:pointer;
 }
 
-.header-register a, 
+/*This just provides the .1 more opacity to the register link*/
+.header-highlighted {
+	background: rgba(255,255,255,.3);
+}
+
+.header-register a,
 .header-login a {
 	text-decoration: none;
 }
@@ -147,7 +139,7 @@ body {
 
 /* LOGIN CONTAINER */
 
-.login-container, 
+.login-container,
 .register-container {
 	margin:0 auto;
 	text-align: center;
@@ -507,7 +499,7 @@ body {
 
 .gallery-container ul {
 	list-style: none;
-	padding-left: 0;	
+	padding-left: 0;
 }
 
 .gallery-container li {
@@ -568,14 +560,14 @@ body {
 
 /* College Hotel & Restaurant/Bar Page */
 
-.hotel-container, 
+.hotel-container,
 .restaurants-container {
 	width: 1080px;
 	margin: 25px auto;
 	position: relative;
 }
 
-.hotel-list, 
+.hotel-list,
 .restaurants-list {
 	width: 600px;
 	display: inline-block;
@@ -587,13 +579,13 @@ body {
 	margin-right: 15px;
 }
 
-.hotel-list ul, 
+.hotel-list ul,
 .restaurants-list ul {
 	list-style: none;
 	padding-left: 0;
 }
 
-.hotel-list li, 
+.hotel-list li,
 .restaurants-list li {
 	display: block;
 	border-bottom: 1px solid #f0f0f0;
@@ -601,14 +593,14 @@ body {
 	color: #555;
 }
 
-.hotel-list-title, 
+.hotel-list-title,
 .restaurants-list-title {
 	font-weight: bold;
 	font-size: 16px;
 	display: inline-block;
 }
 
-.hotel-list-miles, 
+.hotel-list-miles,
 .restaurants-list-miles {
 	display: inline-block;
 	font-size: 12px;
@@ -617,7 +609,7 @@ body {
 	vertical-align: top;
 }
 
-.hotel-list-address, 
+.hotel-list-address,
 .restaurants-list-address {
 	display: inline-block;
 	color: #999;
@@ -625,7 +617,7 @@ body {
 	padding-top: 3px;
 }
 
-.hotel-list-rating, 
+.hotel-list-rating,
 .restaurants-list-rating {
 	display: inline-block;
 	float: right;
@@ -633,7 +625,7 @@ body {
 	vertical-align:top;
 }
 
-.hotel-list-info, 
+.hotel-list-info,
 .restaurants-list-info {
 	display: inline-block;
 	width: 475px;
@@ -642,13 +634,13 @@ body {
 }
 
 .hotel-list-info-top,
-.hotel-list-info-bottom, 
+.hotel-list-info-bottom,
 .restaurants-list-info-top,
 .restaurants-list-info-bottom {
 	display:block;
 }
 
-.hotel-list-avatar, 
+.hotel-list-avatar,
 .restaurants-list-avatar {
 	display: inline-block;
 	width: 50px;
@@ -657,7 +649,7 @@ body {
 	margin-top: -5px;
 }
 
-.hotel-list-avatar img, 
+.hotel-list-avatar img,
 .restaurants-list-avatar img {
 	width: 50px;
 	height: auto;
