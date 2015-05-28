@@ -11,11 +11,11 @@ export default Ember.Controller.extend({
 	        Ember.$('.home-sidebar-close').removeClass('hidden');
 	    },
 
-	    closeSidebar: function(){
-	        Ember.$('.home-sidebar').removeClass('open-sidebar');
+    closeSidebar: function(){
+        Ember.$('.home-sidebar').removeClass('open-sidebar');
 
-	        Ember.$('.home-sidebar-close').addClass('hidden');
-	        Ember.$('.home-sidebar-open').removeClass('hidden');
+        Ember.$('.home-sidebar-close').addClass('hidden');
+        Ember.$('.home-sidebar-open').removeClass('hidden');
 	    }
 	}
 });

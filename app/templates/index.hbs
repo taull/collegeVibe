@@ -2,18 +2,29 @@
 
 <div class="header-buttons">
 
+	{{#if currentUser}}
+
+	<div {{action 'logout'}} class="header-button">
+			<p>Logout</p>
+	</div>
+
+	{{else}}
+
 	{{#link-to 'register'}}
-	<div class="header-register">
+	<div class="header-button header-highlighted">
 		<p>Register</p>
 	</div>
 	{{/link-to}}
 
 	{{#link-to 'login'}}
-	<div class="header-login">
+	<div class="header-button">
 		<p>Log in</p>
 	</div>
 	{{/link-to}}
-	
+
+	{{/if}}
+
+
 </div>
 
 <div class="homepage-banner">
