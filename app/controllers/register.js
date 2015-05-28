@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
 	actions: {
 		register: function () {
 			//Get the values from the form
-			var username = this.get('username');
+			var username = this.get('name');
 			var email = this.get('email');
 			var password = this.get('password');
 			var userType = this.get('userType');
@@ -22,6 +22,7 @@ export default Ember.Controller.extend({
 					error:function (user, error) {
 						alert(error.message);
 					}});
+
 	}
 }
 
