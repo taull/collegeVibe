@@ -233,8 +233,42 @@ body {
 /* Interactive Map */
 
 .map-container {
-	height: 100vh;
-	background:#222;
+	height: 600px;
+	width: 100%;
+	background:#f8f8f8;
+}
+
+.map-school-list {
+	width: 25%;
+	left: 0;
+	background:#dfdfdf;
+	min-height: 600px;
+	max-height: 600px;
+	overflow: scroll;
+
+}
+
+.map-school-list ul {
+	list-style: none;
+	padding-left: 0;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #f0f0f0;
+
+}
+
+.map-school-list li {
+	padding: 15px 30px;
+	color: #555;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #f0f0f0;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.map-school-list li span {
+	padding-right: 10px;
+	color: #999;
 }
 
 .shadow {
@@ -744,10 +778,11 @@ body {
 }
 
 .footer-container {
-	width: 1080px;
+	width: 100%;
 	margin: 0 auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 0;
 }
 
 .footer-container ul {
@@ -761,18 +796,25 @@ body {
 	vertical-align: top;
 	padding: 30px;
 	font-size: 0;
+	height: 300px;
 }
 
 .footer-container li:nth-child(2) {
-	width: 45%;
-	border-right: 1px solid #555;
-	border-left: 1px solid #555;
+	width: 50%;
+	border-right: 1px solid #333;
+	border-left: 1px solid #333;
 	text-align: center;
 	padding-bottom: 70px;
+	height: 300px;
+}
+
+.footer-container li:first-child {
+	border-right: 1px solid #000;
 }
 
 .footer-container li:nth-child(3) {
 	text-align: right;
+	border-left: 1px solid #000;
 }
 
 .footer-container li h1 {
