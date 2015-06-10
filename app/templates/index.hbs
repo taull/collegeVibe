@@ -33,7 +33,7 @@
 			{{#link-to 'index'}}
 				<div><img src="assets/images/logo_white_text.svg" class="shadow homepage-logo"></div>
 			{{/link-to}}
-				{{input placeholder='Enter College or University' type='text' class='search-input' action="searchDropdown"}}
+				{{input placeholder='Enter College or University' type='text' class='search-input' value=query key-up='searchDropdown' action="searchDropdown"}}
 				<div class="college-search"></div>
 		</div>
 	</div>
@@ -44,7 +44,10 @@
 <div class="map-container">
 	<div class="map-school-list">
 		<ul> 
-			<li><span>{{fa-icon "angle-right"}}</span>Example University</li>
+		{{#each school in model}}
+			<li><span>{{fa-icon "angle-right"}}</span>{{school.attributes.Name}}</li>
+		{{/each}}
+
 		</ul>
 	</div>
 </div>
